@@ -15,6 +15,10 @@
        to_port: 8000
        cidr_ip: 0.0.0.0/0
      - proto: tcp
+       from_port: 8088
+       to_port: 8088
+       cidr_ip: 0.0.0.0/0
+     - proto: tcp
        from_port: 443
        to_port: 443
        cidr_ip: 0.0.0.0/0
