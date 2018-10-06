@@ -26,6 +26,10 @@
        from_port: 514
        to_port: 514
        cidr_ip: 0.0.0.0/0
+     - proto: tcp
+       from_port: 1514
+       to_port: 514
+       cidr_ip: 0.0.0.0/0
     rules_egress:
      - proto: all
        cidr_ip: 0.0.0.0/0
