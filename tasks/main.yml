@@ -5,34 +5,8 @@
     name: "{{ security_group }}"
     description: Security Group for webserver Servers
     region: "{{ region }}"
-    rules:
-     - proto: tcp
-       from_port: 22
-       to_port: 22
-       cidr_ip: 0.0.0.0/0
-     - proto: tcp
-       from_port: 8000
-       to_port: 8000
-       cidr_ip: 0.0.0.0/0
-     - proto: tcp
-       from_port: 8088
-       to_port: 8088
-       cidr_ip: 0.0.0.0/0
-     - proto: tcp
-       from_port: 443
-       to_port: 443
-       cidr_ip: 0.0.0.0/0
-     - proto: tcp
-       from_port: 514
-       to_port: 514
-       cidr_ip: 0.0.0.0/0
-     - proto: tcp
-       from_port: 1514
-       to_port: 1514
-       cidr_ip: 0.0.0.0/0
-    rules_egress:
-     - proto: all
-       cidr_ip: 0.0.0.0/0
+    rules: "{{ sec_grp_in }}"
+    rules_egress: "{{ sec_grp_out }}"
   register: basic_firewall
 
 - name: Launch the new EC2 Instance for {{ inventory_group }}
