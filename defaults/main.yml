@@ -1,2 +1,17 @@
 ---
 # defaults file for ansible-ec2-instance
+# ec2 security groups: List of firewall inbound rules.
+sec_grp_in:
+- proto: tcp
+  from_port: 22
+  to_port: 22
+  cidr_ip: 0.0.0.0/0
+- proto: tcp
+  from_port: 80
+  to_port: 80
+  cidr_ip: 0.0.0.0/0
+  
+# ec2 security groups: List of firewall outbound rules.
+sec_grp_out:
+- proto: all
+  cidr_ip: 0.0.0.0/0
