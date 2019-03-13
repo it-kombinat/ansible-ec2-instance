@@ -15,3 +15,7 @@ sec_grp_in:
 sec_grp_out:
 - proto: all
   cidr_ip: 0.0.0.0/0
+
+# Volume defaults
+ec2_vol_add: false
+ec2_dev_name: /dev/xvdx
