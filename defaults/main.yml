@@ -19,3 +19,9 @@ sec_grp_out:
 # Volume defaults
 ec2_vol_add: false
 ec2_dev_name: /dev/xvdx
+
+# DYN-DNS Section
+dyn_dns: false # enable or disable DNS Configuration via route53
+dyn_zone: example.net # DNS Domain
+dyn_dns_pre: host # Hostprefix - host-01
+dyn_host_id: 1 # Host-Id starts by 01
