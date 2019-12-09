@@ -6,7 +6,16 @@ The below requirements are needed on the host that executes this module.
  - boto3
  - python >= 2.6
  - Ansible >= 2.4
- 
+
+
+# How to use
+
+## Adding Variables
+```
+export AWS_ACCESS_KEY_ID="NUHKOIJFOJF9GFJDO"
+export AWS_SECRET_ACCESS_KEY="LSDJKFODSJF9SDJF8UH3U3HFKW"
+```
+
 # Role Variables
 Just a couple of examples can be seen below, see [defaults/main.yml](defaults/main.yml) for the full list.
 
