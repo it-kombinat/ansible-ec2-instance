@@ -1,3 +1,6 @@
+
+[![CircleCI](https://circleci.com/gh/it-kombinat/ansible-ec2-instance/tree/master.svg?style=svg)](https://circleci.com/gh/it-kombinat/ansible-ec2-instance/tree/master)
+
 # Ansible-EC2-Instance
 Ansible Role to manage EC2 instances.
 # Requirements
